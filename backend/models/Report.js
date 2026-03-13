@@ -21,6 +21,11 @@ const reportSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    extractedText: {
+        type: String,
+        default: '',
+    },
+    extractedText: { type: String, default: '' },
     uploadedAt: {
         type: Date,
         default: Date.now,

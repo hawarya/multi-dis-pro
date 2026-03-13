@@ -1,5 +1,5 @@
 import UploadForm from './components/UploadForm';
-
+import './App.css'
 function App() {
   return (
     <div className="min-h-screen bg-slate-50">

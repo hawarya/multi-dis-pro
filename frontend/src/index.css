@@ -1,35 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
 
-/* Custom colors */
-@theme{
-  --color-slate-50: #f8fafc;
-  --color-slate-100: #f1f5f9;
-  --color-slate-300: #cbd5e1;
-  --color-slate-500: #64748b;
-  --color-slate-700: #334155;
-  --color-slate-800: #1e293b;
-  --color-slate-900: #0f172a;
-
-  --color-blue-50: #eff6ff;
-  --color-blue-100: #dbeafe;
-  --color-blue-500: #3b82f6;
-  --color-blue-600: #2563eb;
-  --color-blue-700: #1d4ed8;
-
-  --color-green-50: #f0fdf4;
-  --color-green-200: #bbf7d0;
-  --color-green-700: #15803d;
-
-  --color-red-50: #fef2f2;
-  --color-red-200: #fecaca;
-  --color-red-700: #b91c1c;
-}
 
 body {
   margin: 0;
-  background-color: var(--color-slate-50);
-  color: var(--color-slate-900);
-  font-family: system-ui, Arial, sans-serif;
+  background-color: #f8fafc; /* slate-50 */
+  color: #0f172a; /* slate-900 */
+  font-family: 'Outfit', system-ui, Arial, sans-serif;
+}
+.input {
+  @apply w-full px-4 py-4 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-400 outline-none;
 }
